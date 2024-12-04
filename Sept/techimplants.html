@@ -1,0 +1,464 @@
+<!doctype html>
+<html>
+
+<head>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="6a06e0ff-3af4-42b9-ab66-dd32f9e600e0"
+        data-blockingmode="auto" type="8d837a978209d4dd7e817739-text/javascript"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SXLQTMF14Q"
+        type="8d837a978209d4dd7e817739-text/javascript"></script>
+    <script type="8d837a978209d4dd7e817739-text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SXLQTMF14Q');
+    </script>
+    <!-- Google Tag Manager -->
+    <script type="915998925114be6a38098363-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-MQMRMNL5');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Clarity tracking code for https://greg.heffner.live/ -->
+    <script
+        type="8d837a978209d4dd7e817739-text/javascript">    (function(c,l,a,r,i,t,y){        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);    })(window, document, "clarity", "script", "nry25es3go");</script>
+    <script type="8d837a978209d4dd7e817739-text/javascript">
+                (function(c,l,a,r,i,t,y){
+                    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                })(window, document, "clarity", "script", "nry25es3go");
+            </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon-16x16.png">
+    <link rel="manifest" href="/image/site.webmanifest">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'trebuchet ms', sans-serif;
+            padding: 20px;
+            background: #4E90BB;
+        }
+
+        .header {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            background: white;
+        }
+
+        .leftcolumn {
+            float: left;
+            width: 75%;
+            height: 90vh;
+            overflow-y: visable;
+        }
+
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+        .img {
+
+            width: 100%;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            background-color: black !important;
+            font-family: 'trebuchet ms', sans-serif;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar button {
+            background-color: transparent;
+            margin-left: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 90px;
+        }
+
+        .navbar button a {
+            color: transparent;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .navbar li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 25px;
+            font-family: 'trebuchet ms', sans-serif;
+        }
+
+        .navbar button {
+            background-color: black;
+            margin-left: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 90px;
+        }
+
+        .navbar button a {
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            font-family: 'trebuchet ms', sans-serif;
+        }
+
+        .scrollcard {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .scroll-container {
+            height: calc(100% - 40px);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .scroll-container nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            animation: scroll 20s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                top: 100%;
+            }
+
+            100% {
+                top: -100%;
+            }
+        }
+        .link-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .link-container a {
+            flex: 1 1 22%; /* Adjust the percentage to control the width of each link */
+            margin: 5px;
+            text-align: center;
+        }
+    </style>
+
+    <meta name="title" content="Nerdsense - Tech Implants - Sept 2024">
+    <meta name="description" content="LED and NFC Lighting Up the Future Under Your Skin">
+    <meta name="keywords" content="implants, NFC, tech, taboo, hand">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta http-equiv='content-language' content='en-gb'>
+    <meta name="author" content="Greg Heffner">
+
+    <title>Nerdsense - Tech Implants - Sept 2024</title>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3941951641805897"
+        crossorigin="anonymous" type="8d837a978209d4dd7e817739-text/javascript"></script>
+
+    <script async src="https://fundingchoicesmessages.google.com/i/pub-3941951641805897?ers=1"
+        nonce="drPCtL_hPnvLGFPUGtHsFQ" type="915998925114be6a38098363-text/javascript"></script>
+    <script nonce="drPCtL_hPnvLGFPUGtHsFQ" type="915998925114be6a38098363-text/javascript"> (function() {
+              function signalGooglefcPresent() {
+                  if (!window.frames['googlefcPresent']) {
+                      if (document.body) {
+                          const iframe = document.createElement('iframe');
+                          iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;';
+                          iframe.style.display = 'none';
+                          iframe.name = 'googlefcPresent';
+                          document.body.appendChild(iframe);
+                      } else {
+                          setTimeout(signalGooglefcPresent, 0);
+                      }
+                  }
+              }
+              signalGooglefcPresent();
+          })();  
+          </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQMRMNL5" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <nav class="navbar">
+        <div class="navdiv">
+            <ul>
+                <li><a href="https://greg.heffner.live">Home</a></li>
+                <li><a href="https://greg.heffner.live/photos.html">Photos</a></li>
+                <li><a href="https://greg.heffner.live/blog.html">Blog</a></li>
+                <li><a
+                        href="https://www.paypal.com/donate/?business=UK9DCMKFRTWRN&no_recurring=0&item_name=Thanks+for+supporting+the+page&currency_code=USD">Support</a>
+                <li><a href="https://greg.heffner.live/privacy.html">Privacy Policy</a></li>
+                <li><a href="https://greg.heffner.live/cookie.html">Cookie Policy</a></li>
+                <li><a
+                        href="/cdn-cgi/l/email-protection#c1aca0a8afefb1ada0aff4f6f9f281a7a0b2b5aca0a8adefa2aeac">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="header">
+        <h2>Nerdsense</h2>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+
+                <h1>Tech Implants: LED and NFC Lighting Up the Future Under Your Skin</h1>
+                <h5>Greg Heffner September 1, 2024 </h5>
+                
+                <img src=/image/blog/2024/Sept/xsiid.JPG alt="xSIID implant" style="display: block; margin-left: auto; margin-right: auto; width: 40%; height: auto;">
+                
+                <p>In 20 years where will technology be? I remember when I was a kid watching the Jetsons and just imagining what my
+                    life was going to be like when I was older. What kind of things were we doing back then that would have been a
+                    catalyst to where we are today? Think about autonomous cars, robot assistants, and automated living. Rosie was my
+                    favorite character in that show. If George and Jane could have a robot to help out, I wanted one too. Check out <a
+                        href="https://www.metv.com/lists/12-far-out-things-you-never-knew-about-the-jetsons">12 far-out things you never
+                        knew about 'The Jetsons'</a> for some fun flashbacks. Im going to be talking about the <a href="https://dangerousthings.com/product/xsiid/">xSIID NFC + LED Implant</a> I
+                    put in my hand. Growing up any technology that was unknown or misunderstood was obviously being used by "the
+                    government" to spy on us. Pair this theory with some peoples genuine issues related to tattoos, body art, and
+                    piercings and you get an implantable NFC chip that understandably makes people uneasy. </p>
+                
+                <img src="/image/blog/2024/Sept/hand.JPG" alt="hand" style="display: block; margin-left: auto; margin-right: auto; width: 40%; height: 1%;">
+                
+                <p>I installed my device on Aug 28, 2024 and if you want to watch the implant video feel free to check it out <a
+                        href="https://www.youtube.com/watch?v=SrPt3Wz1Mpg">here</a>. I ask that if you have issues with needles to not
+                    watch. It was a very easy install. Honestly the hardest thing was getting the piercer to my house. The kits come with a home install kit and some links to find a professional piercer if you choose to not do it yourself. I chose to do it at home because I have a lot of tattoos and piercings and I am comfortable with the process just not comfortable pushing it through myself. I have some family in the medical field and some of them were comfortable with the process so it was a win. Not my mom hahaha she loves me but she is not a fan of my ideas sometimes. After it was installed it fine with no issues as of writing this blog. I went to work the next day and showed my friends and outside of the shock of what was done the overall sentiment was intrigued and interested! </p>
+                    
+                    
+
+                <h3>What is it?</h3>
+                <p>According to <a href="https://dangerousthings.com/product/xsiid/">the product website</a> the "xSIID is a next generation NFC compliant microchip implant which leverages the SIID, an innovative OEM module
+                    design from Dsruptive. The module houses both an NTAG I2C NFC chip and an LED indicator tied to the energy
+                    harvesting pins of the NTAG I2C. This design ensures the LED does not interfere with operation of the NFC chip and
+                    always receives filtered power output regardless of field variance. The xSIID comes in a variety of colors and
+                    offers the 1kB (888 bytes) user writable memory. You can store website URLs, contact details, or arbitrary binary
+                    data and share that with anyone who scans your xSIID with an NFC enabled smartphone!"</p>
+                
+                <h3>What does it do?</h3>
+
+                <figure>
+                    <img src="/image/blog/2024/Sept/scan.PNG" alt="NFC xSIID scan"
+                        style="display: block; margin-left: auto; margin-right: auto; width: 300px; height: 500px;">
+                    <figcaption style="text-align:center;">Here is a scan of my implant. The LED lights up blue when scanned. I have a page that welcomes you to my site. You can save my contact info, view this blog, 
+                    or just see what I have been up to.
+                    </figcaption>
+                </figure>
+
+                
+                <p>Near-field communication technology (NFC) allows two devices to communicate wirelessly. The technology can be embedded in a
+                small tag to facilitate data transfer between nearby mobile phones, laptops, tablets, and other electronics. NFC tags work without a battery and draw power
+                from another devices like a smartphone. An NFC reader connects to only one NFC tag at a time, minimizing accidental transactions. NFC tags can work without 
+                internet connectivity. This means people can use NFC-enabled services even while theyre disconnected from the internet.
+                The LED is a small light that can be programmed to light up when the implant is scanned. The LED is powered by the NFC field and lights up blue in my case.
+                The LED is powered using the "power harvesting" feature of the implant so dont think of a signal being processed to light up.</p>
+                
+                 <h3>Is it safe?</h3>
+                 I did a whole bunch of research on which device to get. I chose the xSIID because of the safety testing that was done on it. I found a <a href="https://forum.dangerousthings.com/t/tests-weve-performed-on-our-x-series-tags/474">forum</a> that had a list of tests that were done on the device. Here are a few of the tests that were done:<br>
+            <div class="link-container">
+                <a
+                    href="https://forum.dangerousthings.com/t/tests-weve-performed-on-our-x-series-tags/474#glass-contamination-testing-2">Glass
+                    contamination testing</a>
+                <a
+                    href="https://forum.dangerousthings.com/t/tests-weve-performed-on-our-x-series-tags/474#vacuum-test-to-042mbar-3">Vacuum
+                    test to 0.42mBar</a>
+                <a
+                    href="https://forum.dangerousthings.com/t/tests-weve-performed-on-our-x-series-tags/474#pressure-vessel-testing-4">Pressure
+                    vessel testing</a>
+                <a href="https://forum.dangerousthings.com/t/tests-weve-performed-on-our-x-series-tags/474#liquid-nitrogen-test-5">Liquid
+                    nitrogen test</a>
+                <a
+                    href="https://forum.dangerousthings.com/t/tests-weve-performed-on-our-x-series-tags/474#emp-testing-with-disc-launcher-electromagnetic-pulse-machine-6">EMP
+                    testing</a>
+                <a
+                    href="https://forum.dangerousthings.com/t/tests-weve-performed-on-our-x-series-tags/474#growth-test-sterilization-testing-7">Sterilization
+                    testing</a>
+                <a
+                    href="https://forum.dangerousthings.com/t/tests-weve-performed-on-our-x-series-tags/474#crush-testing-up-to-500n-maxing-out-the-machine-9">Crush
+                    testing up to 500N</a>
+                <a href="https://forum.dangerousthings.com/t/tests-weve-performed-on-our-x-series-tags/474#mri-testing-up-to-7t-10">MRI
+                    testing up to 7T</a>
+            </div>
+                
+                <h3>My future plans for it:</h3>
+                
+                <p>At this point either you are accepting of the idea or you hate it. Its ok. I hope I got you closer to acceptance
+                    though! I think of a future where my life is touch free. In only a couple days of having it I have found myself
+                    explaining what was inside of it, how it works, and what I plan on using it for. I have a few items I throw out when
+                    showing it off but honestly depending on the type of device you get and where you put it the opportunities are
+                    endless. One of the biggest solutions I am currently waiting to become more available in the US is tap to pay with
+                    the implants. There are posts about <a href="https://forum.dangerousthings.com/t/making-payments-with-an-implant/643">making payments with an implants</a>
+                    and it is working for people in the US but there is an expiration that has to be figured out before I am willing to invest. Remember your debit card expires and encryption technologies
+                    change often with banks. I thought about what
+                    all I could use the implant for in my life and I came up with this list. Just think of the ideas you can have when
+                    you think of your specific situations. Not all of these ideas have been built yet but the possibilities are there: Unlocking cars, starting cars, unlock/lock doors, password management, 2FA, MFA,
+                    Git-Commits, Contact sharing, Medical box locks. The list goes on and on. I am excited to see where this goes but please keep in mind that this is a personal choice and not for everyone. I am not a doctor and I am not a professional piercer. 
+                    I am just a guy who likes tech and wanted to see what it was like to have a piece of it inside of me. Also one implant isnt able to do everything. Please do your research and make sure you are comfortable with the idea before you get one. </p>
+                    Here are 3 links to some of the things you can do with the implant:</p>
+                    
+                    
+                    <a href="https://forum.dangerousthings.com/t/xsiid-what-can-it-do/8265">xSIID what can it do?</a> |
+                    <a href="https://devpost.com/software/how-ripple-cbdc-chip-implants-can-transform-your-life">RIPPLE banking</a> |
+                    <a
+                        href="https://www.hourdetroit.com/technology-topics/why-some-tech-enthusiasts-are-getting-microchips-implanted-in-their-bodies">Why
+                        Some Tech Enthusiasts Are Getting Microchips Implanted in Their Bodies</a></p>
+
+                <h3>If you dont believe me ask <a href="https://www.bing.com">BING AI</a> for an explanation</h3>
+                <p>Imagine you have a tiny magic sticker that you can put under your skin. This magic sticker is called an xSIID implant.
+                Its like a super cool gadget that can do a few neat tricks:<br>
+                <ul><strong>Light Up:</strong> When you bring a special device, like a smartphone, close to it, the xSIID can light up with a tiny LED light.
+                Its like having a little flashlight under your skin!<br>
+               <strong>Share Information:</strong> This magic sticker can store small pieces of information, like a secret message or a link to a
+                website. When someone scans it with their phone, they can see the message or visit the website.<br>
+                <strong>Unlock Things:</strong> You can use it to unlock special doors or gadgets that can read the magic sticker. Its like having a key
+                that you never lose because its always with you!<br></ul>
+                So, the xSIID implant is a tiny, hidden gadget that lights up, shares information, and can unlock things, making you
+                feel like a tech wizard! 🧙‍♂️✨</p>
+
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h3>About Me</h3>
+                <p>I served in the U.S. Army, specializing in Network Switching Systems and was attached to a Patriot
+                    Missile
+                    System Battalion. After my deployment and Honorable discharge, I went to college in Jacksonville, FL
+                    for
+                    Computer Science. I have two beautiful and very intelligent daughters. I have more than 20 years
+                    professional IT
+                    experience. This page is made to learn and have
+                    fun. If
+                    its messed up, let me know. Im still learning. Please leave some feedback in <a href="https://greg.heffner.live/forum.html#commento-login-box-container">Open Forum</a> link at the top right or just check in and say Hi! :)</p>
+            </div>
+            <div class="scrollcard">
+                <h3>Recent Blogs</h3>
+                <div class="scroll-container">
+                    <nav>
+                        <li><a href="https://greg.heffner.live/image/pages/2024/Aug/ansible.html">Ansible: Let me put
+                                you on patch game</a></li>
+                        <li><a href="https://greg.heffner.live/image/pages/2024/Aug/dockerupdate.html">Docker Updates: 4
+                                steps to secure your images</a></li>
+                        <li><a href="https://greg.heffner.live/image/pages/2024/Aug/travelrouter.html">Travel Router:
+                                How I stay secure on work trips</a></li>
+                        <li><a href="https://greg.heffner.live/image/pages/2024/Aug/secrets.html">Secrets: Password
+                                Managers and Hardware Keys</a></li>
+                        <li><a href="https://greg.heffner.live/image/pages/2024/Aug/twingate.html">Twingate: Your Key to
+                                Remote Networks</a></li>
+                        <li><a href="https://greg.heffner.live/image/pages/2024/Aug/dmrradios.html">DMR Radios: Its
+                                giving radio-nerd vibes</a></li>
+                        <li><a href="https://greg.heffner.live/image/pages/2024/Aug/tryhackme.html">TryHackMe: Command Line Confessions</a></li>
+                    </nav>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Popular Projects</h3>
+                <li><a href="https://github.com/gregheffner/k8-nginx-webpage">Kubernetes cluster build</a></li>
+                <li><a href="https://github.com/gregheffner/python-init">CookieCutter Script - A python template</a>
+                </li>
+                <li><a href="https://github.com/gregheffner/playbooks/tree/main/tasks/">Ansible Kali Docker Build</a>
+                </li>
+                <li><a href="https://github.com/gregheffner/playbooks/blob/main/tasks/k8reboot.yml">Ansible Kubernetes
+                        node
+                        bounce w/NGINX HA</a></li>
+            </div>
+            <div class="card">
+                <h3>Book Board</h3>
+                <li><a href="https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592">The Phoenix
+                        Project:
+                        A Novel about IT, DevOps, and Helping Your Business Win</a></li>
+                <li><a href="https://www.amazon.com/Algorithms-to-Live-By-audiobook/dp/B01D24NAL6/">Algorithms to Live
+                        By: The
+                        Computer Science of Human Decisions</a></li>
+                <li><a href="https://www.ebay.com/itm/144165393633?">Little Lefty</a></li>
+                <li><a href="https://www.amazon.com/Anniversary-Paperback-Volumes-Limited-Original/dp/1637990049/">Harry
+                        Potter</a>
+                </li>
+            </div>
+            <div class="card">
+                <h3>Weather Loop </h3>
+                <a href="https://radar.weather.gov/ridge/standard/SOUTHEAST_loop.gif">
+                    <img border="3" src="https://radar.weather.gov/ridge/standard/SOUTHEAST_loop.gif"
+                        style="border: 1px solid FF0000; width: 300px;">
+            </div>
+        </div>
+    </div>
+    </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+        data-cf-settings="f2199bb571cfda9c96d3d8cf-|49" defer type="8d837a978209d4dd7e817739-text/javascript"></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"rayId":"8a0c47bffe7b53f3","r":1,"version":"2024.4.1","token":"58654ca0c624448c9c52f5291ddf5bec"}'
+        crossorigin="anonymous" type="8d837a978209d4dd7e817739-text/javascript"></script>
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+        data-cf-settings="8d837a978209d4dd7e817739-|49" defer></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"rayId":"8b881be33bb1672d","version":"2024.8.0","r":1,"token":"58654ca0c624448c9c52f5291ddf5bec","serverTiming":{"name":{"cfL4":true}}}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

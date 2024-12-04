@@ -1,0 +1,412 @@
+<!doctype html>
+<html>
+
+<head>
+	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="6a06e0ff-3af4-42b9-ab66-dd32f9e600e0"
+		data-blockingmode="auto" type="text/javascript"></script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SXLQTMF14Q"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-SXLQTMF14Q');
+	</script>
+	<!-- Google Tag Manager -->
+	<script type="915998925114be6a38098363-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-MQMRMNL5');</script>
+	<!-- End Google Tag Manager -->
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/image/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/image/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/image/favicon-16x16.png">
+	<link rel="manifest" href="/image/site.webmanifest">
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'trebuchet ms', sans-serif;
+			padding: 20px;
+			background: #4E90BB;
+		}
+
+		.header {
+			padding: 10px;
+			font-size: 20px;
+			text-align: center;
+			background: white;
+		}
+
+		.leftcolumn {
+			float: left;
+			width: 75%;
+			height: 90vh;
+			overflow-y: visable;
+		}
+
+		.rightcolumn {
+			float: left;
+			width: 25%;
+			padding-left: 20px;
+		}
+
+		.img {
+
+			width: 100%;
+			padding: 20px;
+		}
+
+		.card {
+			background-color: white;
+			padding: 20px;
+			margin-top: 20px;
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0; /* Optional: Add some margin for spacing */
+    	}
+
+		.footer {
+			padding: 20px;
+			text-align: center;
+			background: #ddd;
+			margin-top: 20px;
+		}
+
+		@media screen and (max-width: 800px) {
+
+			.leftcolumn,
+			.rightcolumn {
+				width: 100%;
+				padding: 0;
+			}
+		}
+
+		.navbar {
+			display: flex;
+			justify-content: flex-end;
+			width: 100%;
+			background-color: black !important;
+			font-family: 'trebuchet ms', sans-serif;
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+
+		.navdiv {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.navbar button {
+			background-color: transparent;
+			margin-left: 10px;
+			border-radius: 10px;
+			padding: 10px;
+			width: 90px;
+		}
+
+		.navbar button a {
+			color: transparent;
+			font-weight: bold;
+			font-size: 15px;
+		}
+
+		.navbar li {
+			list-style: none;
+			display: inline-block;
+		}
+
+		.navbar li a {
+			color: white;
+			font-size: 18px;
+			font-weight: bold;
+			margin-right: 25px;
+			font-family: 'trebuchet ms', sans-serif;
+		}
+
+		.navbar button {
+			background-color: black;
+			margin-left: 10px;
+			border-radius: 10px;
+			padding: 10px;
+			width: 90px;
+		}
+
+		.navbar button a {
+			color: white;
+			font-weight: bold;
+			font-size: 15px;
+			font-family: 'trebuchet ms', sans-serif;
+		}
+
+		.scrollcard {
+			height: 200px;
+			overflow: hidden;
+			position: relative;
+			background-color: white;
+			padding: 20px;
+			margin-top: 20px;
+		}
+
+		.scroll-container {
+			height: calc(100% - 40px);
+			overflow: hidden;
+			position: relative;
+		}
+
+		.scroll-container nav {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			animation: scroll 20s linear infinite;
+		}
+
+		@keyframes scroll {
+			0% {
+				top: 100%;
+			}
+
+			100% {
+				top: -100%;
+			}
+		}
+	</style>
+
+	<meta name="title" content="Nerdsense - Advent of Cyber - Nov 2024">
+	<meta name="description" content="Time for some Holiday fun!">
+	<meta name="keywords" content="AoC, Advent, tryHackMe, Advent of Cyber">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="English">
+	<meta http-equiv='content-language' content='en-gb'>
+	<meta name="author" content="Greg Heffner">
+
+	<title>Nerdsense - Advent of Cyber - Nov 2024</title>
+
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3941951641805897"
+		crossorigin="anonymous"></script>
+
+	<script async src="https://fundingchoicesmessages.google.com/i/pub-3941951641805897?ers=1"
+		nonce="drPCtL_hPnvLGFPUGtHsFQ" type="915998925114be6a38098363-text/javascript"></script>
+	<script nonce="drPCtL_hPnvLGFPUGtHsFQ" type="915998925114be6a38098363-text/javascript"> (function() {
+              function signalGooglefcPresent() {
+                  if (!window.frames['googlefcPresent']) {
+                      if (document.body) {
+                          const iframe = document.createElement('iframe');
+                          iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;';
+                          iframe.style.display = 'none';
+                          iframe.name = 'googlefcPresent';
+                          document.body.appendChild(iframe);
+                      } else {
+                          setTimeout(signalGooglefcPresent, 0);
+                      }
+                  }
+              }
+              signalGooglefcPresent();
+          })();  
+          </script>
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQMRMNL5" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<nav class="navbar">
+		<div class="navdiv">
+			<ul>
+				<li><a href="https://greg.heffner.live">Home</a></li>
+				<li><a href="https://greg.heffner.live/photos.html">Photos</a></li>
+				<li><a href="https://greg.heffner.live/blog.html">Blog</a></li>
+				<li><a
+						href="https://www.paypal.com/donate/?business=UK9DCMKFRTWRN&no_recurring=0&item_name=Thanks+for+supporting+the+page&currency_code=USD">Support</a>
+				<li><a href="https://greg.heffner.live/privacy.html">Privacy Policy</a></li>
+				<li><a href="https://greg.heffner.live/cookie.html">Cookie Policy</a></li>
+				
+				<li><a href="/cdn-cgi/l/email-protection#c1aca0a8afefb1ada0aff4f6f9f281a7a0b2b5aca0a8adefa2aeac">Contact</a>
+			</ul>
+		</div>
+	</nav>
+	<div class="header">
+		<h2>Nerdsense</h2>
+	</div>
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+				<h1>Advent of Cyber: Time for some Holiday fun with TryHackMe!</h1>
+				<h5>Greg Heffner November 23, 2024</h5>
+                    
+				<img src="/image/blog/2024/Nov/aocblog.jpeg" alt="AOC blog"
+					style="display: block; margin-left: auto; margin-right: auto; width: 35%; height: auto;">
+				
+				<p>Hey everyone! Its that time of year again! Some of my favorite things to do when learning new IT skills is use my hands. TryHackMe
+					has a series called <a href="https://tryhackme.com/r/christmas">Advent of Cyber</a> where they have a Christmas theme and a
+					story where there is a technical issue or misconfiguration and we have to take steps each day with puzzles to find
+					out what happened and stop it before its too late. </p>
+				
+				<p>Here is a video about it:</p>
+				<div class="video-container">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/_LaJcxtNCM8" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+				
+				<p>This years theme: <a href="https://tryhackme.com/r/room/adventofcyber2024">"How the Glitch stole SOC-mas"</a></p>
+				
+				
+				<h2>What to do:</h2>
+				
+				<p>If you want to join me and my friends who do this all you have to do is <a href="https://tryhackme.com/signup">sign up!</a> TryHackMe as you know from my
+					previous blogs is free. Once you have an account you can load the <a href="https://tryhackme.com/r/christmas">"Advent of Cyber 2024"</a> page and on Dec 1st start
+					the challenge! </p>
+				<img src="/image/blog/2024/Nov/AOC.png" alt="AdventofCyberTask"
+					style="display: block; margin-left: auto; margin-right: auto; width: 75%; height: auto;">
+				
+				<h2>How to win:</h2>
+				
+				<p>This year, TryHackMe is hosting its largest prize draw yet, with prizes totaling over $100,000! The event works like
+					this:
+				<ol>
+					<li>Answering Questions: Each time you answer a question correctly, you earn a raffle ticket.
+					<li>Raffle Tickets: The more raffle tickets you collect, the higher your chances of winning prizes.
+						Grand Prize: The top prize includes DEF CON tickets along with accommodation.
+					<li>Completion Requirement: To be eligible for the grand prize, you need to complete all tasks in this specific room
+						by December 31st.
+					<li>Certificate of Completion: Successfully completing all tasks will also earn you a certificate of completion.
+				</ol>
+				<p>This event encourages participants to answer as many questions as possible to increase their chances of winning and
+					to complete all tasks for a shot at the grand prize and a certificate.</p>
+				
+				<h2>Prep before the start:</h2>
+				
+				<p>So you already have an account and you know what we can win. So how to be successful.... </p>
+				<p>The great thing about these events is that THM makes them so that each year they can be completed by the most novice
+					to the most advance person and still have a blast! You do need to have a good understanding of how to use THM
+					because most of you are going to have to use their virtual machines in their web based environment called
+					"AttackBox." You should know how to start and connect to the machine in order to do these daily challenges. If you
+					do not know how or would like a walkthrough to dust off some of these old skills, check out task 4 in this years
+					Advent of Cyber 2024 challenge and they will walk you through it.</p>
+				<p> Check out these two blogs specifically aboutTryHackMe.com if you would like to know how I prepare.<br>
+				<a href="https://greg.heffner.live/image/pages/2024/Aug/tryhackme.html">TryHackMe: Command Line Confessions</a> or <a
+					href="https://greg.heffner.live/image/pages/2024/Sept/classsetup.html">Class Setup: My learning tech stack - Learn
+					for Free</a></p>
+				<h2>Help:</h2>
+				
+				<p>This year I am doing something new. I have made a discord channel specifically for this AoC challenge.
+					<a href="https://discord.gg/upxYqQyy">Advent of Cyber Discord</a> I invite you all to join it and post questions you may have, updates, or even your big
+					wins! I will be doing the same. </p>
+				
+				<p>Good luck and have fun!</p>
+                    
+
+
+
+			</div>
+		</div>
+		<div class="rightcolumn">
+			<div class="card">
+				<h3>About Me</h3>
+				<p>I served in the U.S. Army, specializing in Network Switching Systems and was attached to a Patriot
+					Missile
+					System Battalion. After my deployment and Honorable discharge, I went to college in Jacksonville, FL
+					for
+					Computer Science. I have two beautiful and very intelligent daughters. I have more than 20 years
+					professional IT
+					experience. This page is made to learn and have
+					fun. If
+					its messed up, let me know. Im still learning :)</p>
+			</div>
+						<div class="scrollcard">
+							<h3>Recent Blogs</h3>
+							<div class="scroll-container">
+								<nav>
+									<li>
+										<a href="https://greg.heffner.live/image/pages/2024/Aug/secrets.html">Secrets: Password
+											Managers and Hardware Keys</a>
+									</li>
+									<li>
+										<a href="https://greg.heffner.live/image/pages/2024/Aug/twingate.html">Twingate: Your Key to
+											Remote Networks</a>
+									</li>
+									<li>
+										<a href="https://greg.heffner.live/image/pages/2024/Aug/dmrradios.html">DMR Radios: Its
+											giving radio-nerd vibes</a>
+									</li>
+									<li>
+										<a href="https://greg.heffner.live/image/pages/2024/Aug/tryhackme.html">TryHackMe: Command Line
+											Confessions</a>
+									</li>
+									<li>
+									<a href="https://greg.heffner.live/image/pages/2024/Sept/techimplants.html">Tech Implants: LED and NFC Lighting Up the Future Under Your Skin</a>
+									</li>
+									<li>
+										<a href="https://greg.heffner.live/image/pages/2024/Sept/upstreamdns.html">Upstream DNS Servers: Put the internet to work</a>
+									</li>
+									<li>
+										<a href="https://greg.heffner.live/image/pages/2024/Sept/classsetup.html">Class Setup: My learning tech stack - Learn for Free</a>
+									</li>
+                                    <li>
+                                        <a href="https://greg.heffner.live/image/pages/2024/Sept/smoketest.html">Smoke Tests: The Production Combine</a>
+                                    </li>
+								</nav>
+							</div>
+						</div>
+			<div class="card">
+				<h3>Popular Projects</h3>
+				<li><a href="https://github.com/gregheffner/k8-nginx-webpage">Kubernetes cluster build</a></li>
+				<li><a href="https://github.com/gregheffner/python-init">CookieCutter Script - A python template</a>
+				</li>
+				<li><a href="https://github.com/gregheffner/playbooks/tree/main/tasks/">Ansible Kali Docker Build</a>
+				</li>
+				<li><a href="https://github.com/gregheffner/playbooks/blob/main/tasks/k8reboot.yml">Ansible Kubernetes
+						node
+						bounce w/NGINX HA</a></li>
+			</div>
+			<div class="card">
+				<h3>Book Board</h3>
+				<li><a href="https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592">The Phoenix
+						Project:
+						A Novel about IT, DevOps, and Helping Your Business Win</a></li>
+				<li><a href="https://www.amazon.com/Algorithms-to-Live-By-audiobook/dp/B01D24NAL6/">Algorithms to Live
+						By: The
+						Computer Science of Human Decisions</a></li>
+				<li><a href="https://www.ebay.com/itm/144165393633?">Little Lefty</a></li>
+				<li><a href="https://www.amazon.com/Anniversary-Paperback-Volumes-Limited-Original/dp/1637990049/">Harry
+						Potter</a>
+				</li>
+			</div>
+			<div class="card">
+				<h3>Weather Loop </h3>
+				<a href="https://radar.weather.gov/ridge/standard/SOUTHEAST_loop.gif">
+					<img border="3" src="https://radar.weather.gov/ridge/standard/SOUTHEAST_loop.gif"
+						style="border: 1px solid FF0000; width: 300px;">
+			</div>
+		</div>
+	</div>
+	</div>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+	<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+		data-cf-settings="f2199bb571cfda9c96d3d8cf-|49" defer></script>
+	<script defer
+		src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+		integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+		data-cf-beacon='{"rayId":"8a0c47bffe7b53f3","r":1,"version":"2024.4.1","token":"58654ca0c624448c9c52f5291ddf5bec"}'
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

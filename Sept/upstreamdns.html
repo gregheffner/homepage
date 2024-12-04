@@ -1,0 +1,471 @@
+<!doctype html>
+<html>
+
+<head>
+	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="6a06e0ff-3af4-42b9-ab66-dd32f9e600e0"
+		data-blockingmode="auto" type="text/javascript"></script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SXLQTMF14Q"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-SXLQTMF14Q');
+	</script>
+	<!-- Google Tag Manager -->
+	<script type="915998925114be6a38098363-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-MQMRMNL5');</script>
+	<!-- End Google Tag Manager -->
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/image/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/image/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/image/favicon-16x16.png">
+	<link rel="manifest" href="/image/site.webmanifest">
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'trebuchet ms', sans-serif;
+			padding: 20px;
+			background: #4E90BB;
+		}
+
+		.header {
+			padding: 10px;
+			font-size: 20px;
+			text-align: center;
+			background: white;
+		}
+
+		.leftcolumn {
+			float: left;
+			width: 75%;
+			height: 90vh;
+			overflow-y: visable;
+		}
+
+		.rightcolumn {
+			float: left;
+			width: 25%;
+			padding-left: 20px;
+		}
+
+		.img {
+
+			width: 100%;
+			padding: 20px;
+		}
+
+		.card {
+			background-color: white;
+			padding: 20px;
+			margin-top: 20px;
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.footer {
+			padding: 20px;
+			text-align: center;
+			background: #ddd;
+			margin-top: 20px;
+		}
+
+		@media screen and (max-width: 800px) {
+
+			.leftcolumn,
+			.rightcolumn {
+				width: 100%;
+				padding: 0;
+			}
+		}
+
+		.navbar {
+			display: flex;
+			justify-content: flex-end;
+			width: 100%;
+			background-color: black !important;
+			font-family: 'trebuchet ms', sans-serif;
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+
+		.navdiv {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.navbar button {
+			background-color: transparent;
+			margin-left: 10px;
+			border-radius: 10px;
+			padding: 10px;
+			width: 90px;
+		}
+
+		.navbar button a {
+			color: transparent;
+			font-weight: bold;
+			font-size: 15px;
+		}
+
+		.navbar li {
+			list-style: none;
+			display: inline-block;
+		}
+
+		.navbar li a {
+			color: white;
+			font-size: 18px;
+			font-weight: bold;
+			margin-right: 25px;
+			font-family: 'trebuchet ms', sans-serif;
+		}
+
+		.navbar button {
+			background-color: black;
+			margin-left: 10px;
+			border-radius: 10px;
+			padding: 10px;
+			width: 90px;
+		}
+
+		.navbar button a {
+			color: white;
+			font-weight: bold;
+			font-size: 15px;
+			font-family: 'trebuchet ms', sans-serif;
+		}
+
+		.scrollcard {
+			height: 200px;
+			overflow: hidden;
+			position: relative;
+			background-color: white;
+			padding: 20px;
+			margin-top: 20px;
+		}
+
+		.scroll-container {
+			height: calc(100% - 40px);
+			overflow: hidden;
+			position: relative;
+		}
+
+		.scroll-container nav {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			animation: scroll 20s linear infinite;
+		}
+
+		@keyframes scroll {
+			0% {
+				top: 100%;
+			}
+
+			100% {
+				top: -100%;
+			}
+		}
+	</style>
+
+	<meta name="title" content="Nerdsense - Upstream DNS Servers - Sept 2024">
+	<meta name="description" content="Put the internet to work">
+	<meta name="keywords" content="DNS, upstream dns, pihole, security>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="language" content="English">
+	<meta http-equiv='content-language' content='en-gb'>
+	<meta name="author" content="Greg Heffner">
+
+	<title>Nerdsense - Upstream DNS Servers - Sept 2024</title>
+
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3941951641805897"
+		crossorigin="anonymous"></script>
+
+	<script async src="https://fundingchoicesmessages.google.com/i/pub-3941951641805897?ers=1"
+		nonce="drPCtL_hPnvLGFPUGtHsFQ" type="915998925114be6a38098363-text/javascript"></script>
+	<script nonce="drPCtL_hPnvLGFPUGtHsFQ" type="915998925114be6a38098363-text/javascript"> (function() {
+              function signalGooglefcPresent() {
+                  if (!window.frames['googlefcPresent']) {
+                      if (document.body) {
+                          const iframe = document.createElement('iframe');
+                          iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;';
+                          iframe.style.display = 'none';
+                          iframe.name = 'googlefcPresent';
+                          document.body.appendChild(iframe);
+                      } else {
+                          setTimeout(signalGooglefcPresent, 0);
+                      }
+                  }
+              }
+              signalGooglefcPresent();
+          })();  
+          </script>
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQMRMNL5" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<nav class="navbar">
+		<div class="navdiv">
+			<ul>
+				<li><a href="https://greg.heffner.live">Home</a></li>
+				<li><a href="https://greg.heffner.live/photos.html">Photos</a></li>
+				<li><a href="https://greg.heffner.live/blog.html">Blog</a></li>
+				<li><a
+						href="https://www.paypal.com/donate/?business=UK9DCMKFRTWRN&no_recurring=0&item_name=Thanks+for+supporting+the+page&currency_code=USD">Support</a>
+				<li><a href="https://greg.heffner.live/privacy.html">Privacy Policy</a></li>
+				<li><a href="https://greg.heffner.live/cookie.html">Cookie Policy</a></li>
+				<li><a
+						href="/cdn-cgi/l/email-protection#c1aca0a8afefb1ada0aff4f6f9f281a7a0b2b5aca0a8adefa2aeac">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="header">
+		<h2>Nerdsense</h2>
+	</div>
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+				<h1>Upstream DNS Servers: Put the internet to work</h1>
+				<h5>Greg Heffner September 4, 2024</h5>
+
+				<img src="/image/blog/2024/Sept/upstreamdns.png" alt="Docker Updates"
+					style="display: block; margin-left: auto; margin-right: auto; width: 35%; height: auto;">
+
+				<p>In previous blogs I talked about DNS Servers and how devices get on the internet. This blog is how
+					those devices get
+					their information. Choosing the correct upstream DNS server to use can help you with things like
+					Efficiency,
+					Security, and Privacy. </p>
+
+				<h3>How do they work?</h3>
+				<p>Upstream DNS servers are the servers that your local DNS server queries when it does not have the
+					answer to a
+					DNS query. </p>
+
+				<p>When you type a website address into your browser, your computer sends the query to a DNS server. If
+					the local DNS
+					server does not have the answer, then it will query other DNS servers to find the answer and return
+					it to your
+					computer. It will keep asking other DNS servers until it finds one that knows the answer, however,
+					if none of the
+					DNS servers know the address, your computer will get a message saying that the website cant be
+					found. Upstream DNS
+					servers help ensure that your DNS queries are resolved quickly and securely, providing an extra
+					layer of protection
+					and performance for your internet browsing. Think of them like switchboards where everyone is
+					connected together and
+					routed. </p>
+
+				<h3>Why are they important to me?</h3>
+
+				<p>There are a few reasons why you should consider using an upstream DNS provider that is different than the one you get from your internet service provider. </p>
+
+				<strong>Efficiency-</strong> Having DNS servers that are built for speed improves your experience.
+				Upstream DNS servers
+				often have upgraded infrastructure that can resolve DNS queries faster than local ISP servers or the
+				PiHoles you may
+				host yourself. Major DNS providers often have a global network of servers. This means that no matter
+				where you are,
+				theres likely a server nearby, reducing latency and speeding up your internet experience.<br><br>
+
+				<strong>Enhanced Security-</strong> Some DNS providers offer features like malware blocking and phishing
+				protection,
+				adding an extra layer of security to your browsing. When you try to access malicious sites, the
+				upstream DNS provider
+				can block the traffic, keeping you from visiting the harmful site. Phishing attacks often involve
+				tricking users into
+				visiting fake websites that look legitimate. These sites try to steal personal information like
+				usernames, passwords,
+				and credit card details. Upstream DNS providers with phishing protection can identify and block these
+				sites, keeping you
+				safe.<br><br>
+
+				<strong>Better Privacy-</strong> Certain upstream DNS providers do not log your DNS queries or by
+				offering encrypted DNS
+				options. Without logging, theres less data available for tracking your online behavior. This is
+				important if youre
+				concerned about privacy and want to minimize your digital footprint. Check out <a href="https://greg.heffner.live/image/pages/2024/July/VPNs.html">this blog</a> on why you
+				should use a
+				VPN.<br><br>
+
+				<h3>What are some Upstream DNS free solutions?</h3>
+				<p>There are several free DNS providers that you can use as your upstream DNS server. Here are a few
+					options:</p>
+				<ul>
+					<li><a href="https://blog.cloudflare.com/introducing-1-1-1-1-for-families/">Cloudflare 1.1.1.1 for Families</a>
+						1.1.1.1 for Families is easy to set up and install, requiring just changing two numbers in the settings of your home
+						devices or network router. 1.1.1.1 for Families has two default options: one that blocks malware and the other that blocks malware and adult
+						content. You choose which setting you want depending on which IP address you configure.<br>
+					</li>
+					<li><a href="https://cleanbrowsing.org">CleanBrowsing</a> is a DNS resolver that helps navigate the internet by inspecting DNS requests against a curated list of domain names. It
+					offers different filtering options to block inappropriate content, making it a good choice for families and schools.
+					</li>
+					<li><a href="https://nordvpn.com/blog/what-is-google-dns">Google Public DNS</a> is a free DNS service provided by Google. It aims to make the internet faster and more efficient by responding to DNS
+					queries from authoritative name servers. It’s one of the largest public DNS services available.s to make the internet faster and more
+					efficient.
+					</li>
+					<li><a href="https://www.comodo.com/secure-dns/">Comodo Secure DNS</a> provides domain name resolution through a network of redundant DNS security servers. It offers a safer, smarter, and
+					faster internet experience by blocking harmful websites like phishing and malware sites.
+					</li>
+				</ul>
+
+				<img src="/image/blog/2024/Sept/upstreamsetup.png" alt="Docker Updates"
+					style="display: block; margin-left: auto; margin-right: auto; width: 35%; height: auto;">
+
+				<h3>Where do I set it up?</h3>
+
+				<p>Setting up your preferred DNS servers can be done in a few different ways, depending on your network
+					configuration and
+					operating system. Here are a few examples:</p>
+
+				<strong>ISP Routers-</strong> Find the router IP address in network settings. Comcast usually is
+				10.0.0.1 and AT&T
+				is usually 192.168.1.254. Log in to your personal router’s admin page. Navigate to the DNS settings.
+				Enter your
+				preferred DNS servers. Save the settings.<br><br>
+
+				<strong>Ubiquiti-</strong> Open a web browser and go to the UniFi Network Controller login page. In the
+				UniFi
+				Network Controller, go to Settings. Select Networks from the menu. Find your WAN network (usually named
+				WAN or
+				WAN1) and click Edit. In the DNS Server fields, enter the IP addresses of your preferred DNS servers.
+				Click Save
+				to apply the changes.<br><br>
+
+				<strong>iOS-</strong> Go to the Settings app. Tap the i icon next to the network you are connected to
+				or want to
+				configure. Scroll down and tap Configure DNS. Select Manual. Tap Add Server. Enter the IP addresses of
+				your
+				preferred DNS servers. Tap Save to apply the changes.<br><br>
+
+				<strong>Android-</strong> Go to the Settings app on your device. Tap on Network & Internet. Scroll down
+				and tap
+				Private DNS. Select Private DNS provider hostname. Enter the hostname of your preferred DNS provider.
+				Tap Save.<br>
+
+			<p>Upstream DNS servers are an important part of your internet experience. They help ensure that your DNS queries are resolved 
+				quickly and securely, providing an extra layer of protection and performance 
+				for your internet browsing. By choosing the right upstream DNS provider, you can improve your online experience and keep your
+				 data safe. Check out <a href="https://www.reddit.com/r/pihole/comments/9iwo21/which_upstream_dns_provider_do_you_use_and_why/">Which upstream 
+					DNS provider do you use and why</a> for more information. Also check out <a href="https://www.youtube.com/watch?v=xAo61IaXun8">Encrypt Your DNS (STOP Your ISP SNOOPING!)</a>
+					by Naomi Brockwell TV for more information on DNS encryption. </p>
+			</p>
+			<h3>BingAI explanation</h3>
+			<p>Imagine the internet is like a huge library with millions of books. When you want to find a specific book, you ask the
+			librarian for help. In this case, the librarian is like a DNS server.<br><br>
+			Now, an upstream DNS server is like a super librarian that helps your local librarian. If your local librarian (your
+			home DNS server) doesnt know where a book is, they ask the super librarian (the upstream DNS server) for help. The
+			super librarian has access to even more information and can quickly find the book you need.<br><br>
+			So, in simple terms, an upstream DNS server helps your local DNS server find websites on the internet when it doesnt
+			know where to look. Its like having a really smart friend who knows everything about the internet!</p>
+			</div>
+		</div>
+		<div class="rightcolumn">
+			<div class="card">
+				<h3>About Me</h3>
+				<p>I served in the U.S. Army, specializing in Network Switching Systems and was attached to a Patriot
+					Missile
+					System Battalion. After my deployment and Honorable discharge, I went to college in Jacksonville, FL
+					for
+					Computer Science. I have two beautiful and very intelligent daughters. I have more than 20 years
+					professional IT
+					experience. This page is made to learn and have
+					fun. If
+					its messed up, let me know. Im still learning :)</p>
+			</div>
+						<div class="scrollcard">
+							<h3>Recent Blogs</h3>
+							<div class="scroll-container">
+								<nav>
+									<li>
+										<a href="https://greg.heffner.live/image/pages/2024/Aug/dockerupdate.html">Docker Updates: 4
+											steps to secure your images</a>
+									</li>
+									<li>
+										<a href="https://greg.heffner.live/image/pages/2024/Aug/travelrouter.html">Travel Router:
+											How I stay secure on work trips</a>
+									</li>
+									<li>
+										<a href="https://greg.heffner.live/image/pages/2024/Aug/secrets.html">Secrets: Password
+											Managers and Hardware Keys</a>
+									</li>
+									<li>
+										<a href="https://greg.heffner.live/image/pages/2024/Aug/twingate.html">Twingate: Your Key to
+											Remote Networks</a>
+									</li>
+									<li>
+										<a href="https://greg.heffner.live/image/pages/2024/Aug/dmrradios.html">DMR Radios: Its
+											giving radio-nerd vibes</a>
+									</li>
+									<li>
+										<a href="https://greg.heffner.live/image/pages/2024/Aug/tryhackme.html">TryHackMe: Command Line
+											Confessions</a>
+									</li>
+									<li>
+									<a href="https://greg.heffner.live/image/pages/2024/Sept/techimplants.html">Tech Implants: LED and NFC Lighting Up the Future Under Your Skin</a>
+									</li>
+								</nav>
+							</div>
+						</div>
+			<div class="card">
+				<h3>Popular Projects</h3>
+				<li><a href="https://github.com/gregheffner/k8-nginx-webpage">Kubernetes cluster build</a></li>
+				<li><a href="https://github.com/gregheffner/python-init">CookieCutter Script - A python template</a>
+				</li>
+				<li><a href="https://github.com/gregheffner/playbooks/tree/main/tasks/">Ansible Kali Docker Build</a>
+				</li>
+				<li><a href="https://github.com/gregheffner/playbooks/blob/main/tasks/k8reboot.yml">Ansible Kubernetes
+						node
+						bounce w/NGINX HA</a></li>
+			</div>
+			<div class="card">
+				<h3>Book Board</h3>
+				<li><a href="https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592">The Phoenix
+						Project:
+						A Novel about IT, DevOps, and Helping Your Business Win</a></li>
+				<li><a href="https://www.amazon.com/Algorithms-to-Live-By-audiobook/dp/B01D24NAL6/">Algorithms to Live
+						By: The
+						Computer Science of Human Decisions</a></li>
+				<li><a href="https://www.ebay.com/itm/144165393633?">Little Lefty</a></li>
+				<li><a href="https://www.amazon.com/Anniversary-Paperback-Volumes-Limited-Original/dp/1637990049/">Harry
+						Potter</a>
+				</li>
+			</div>
+			<div class="card">
+				<h3>Weather Loop </h3>
+				<a href="https://radar.weather.gov/ridge/standard/SOUTHEAST_loop.gif">
+					<img border="3" src="https://radar.weather.gov/ridge/standard/SOUTHEAST_loop.gif"
+						style="border: 1px solid FF0000; width: 300px;">
+			</div>
+		</div>
+	</div>
+	</div>
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+	<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+		data-cf-settings="f2199bb571cfda9c96d3d8cf-|49" defer></script>
+	<script defer
+		src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+		integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+		data-cf-beacon='{"rayId":"8a0c47bffe7b53f3","r":1,"version":"2024.4.1","token":"58654ca0c624448c9c52f5291ddf5bec"}'
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

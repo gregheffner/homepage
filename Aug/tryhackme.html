@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+
+<head>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="6a06e0ff-3af4-42b9-ab66-dd32f9e600e0"
+        data-blockingmode="auto" type="8d837a978209d4dd7e817739-text/javascript"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SXLQTMF14Q"
+        type="8d837a978209d4dd7e817739-text/javascript"></script>
+    <script type="8d837a978209d4dd7e817739-text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SXLQTMF14Q');
+    </script>
+    <!-- Google Tag Manager -->
+    <script type="915998925114be6a38098363-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-MQMRMNL5');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Clarity tracking code for https://greg.heffner.live/ -->
+    <script
+        type="8d837a978209d4dd7e817739-text/javascript">    (function(c,l,a,r,i,t,y){        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);    })(window, document, "clarity", "script", "nry25es3go");</script>
+    <script type="8d837a978209d4dd7e817739-text/javascript">
+                (function(c,l,a,r,i,t,y){
+                    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                })(window, document, "clarity", "script", "nry25es3go");
+            </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon-16x16.png">
+    <link rel="manifest" href="/image/site.webmanifest">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'trebuchet ms', sans-serif;
+            padding: 20px;
+            background: #4E90BB;
+        }
+
+        .header {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            background: white;
+        }
+
+        .leftcolumn {
+            float: left;
+            width: 75%;
+            height: 90vh;
+            overflow-y: visable;
+        }
+
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+        .img {
+
+            width: 100%;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            background-color: black !important;
+            font-family: 'trebuchet ms', sans-serif;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar button {
+            background-color: transparent;
+            margin-left: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 90px;
+        }
+
+        .navbar button a {
+            color: transparent;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .navbar li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 25px;
+            font-family: 'trebuchet ms', sans-serif;
+        }
+
+        .navbar button {
+            background-color: black;
+            margin-left: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 90px;
+        }
+
+        .navbar button a {
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            font-family: 'trebuchet ms', sans-serif;
+        }
+
+        .scrollcard {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .scroll-container {
+            height: calc(100% - 40px);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .scroll-container nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            animation: scroll 20s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                top: 100%;
+            }
+
+            100% {
+                top: -100%;
+            }
+        }
+    </style>
+
+    <meta name="title" content="Nerdsense - TryHackMe - Aug 2024">
+    <meta name="description" content="Command Line Confessions">
+    <meta name="keywords" content="tryhackme, thm, learn, hacking, training, python, kubernetes, walkthrough">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta http-equiv='content-language' content='en-gb'>
+    <meta name="author" content="Greg Heffner">
+
+    <title>Nerdsense - TryHackMe - Aug 2024</title>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3941951641805897"
+        crossorigin="anonymous" type="8d837a978209d4dd7e817739-text/javascript"></script>
+
+    <script async src="https://fundingchoicesmessages.google.com/i/pub-3941951641805897?ers=1"
+        nonce="drPCtL_hPnvLGFPUGtHsFQ" type="915998925114be6a38098363-text/javascript"></script>
+    <script nonce="drPCtL_hPnvLGFPUGtHsFQ" type="915998925114be6a38098363-text/javascript"> (function() {
+              function signalGooglefcPresent() {
+                  if (!window.frames['googlefcPresent']) {
+                      if (document.body) {
+                          const iframe = document.createElement('iframe');
+                          iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;';
+                          iframe.style.display = 'none';
+                          iframe.name = 'googlefcPresent';
+                          document.body.appendChild(iframe);
+                      } else {
+                          setTimeout(signalGooglefcPresent, 0);
+                      }
+                  }
+              }
+              signalGooglefcPresent();
+          })();  
+          </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQMRMNL5" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <nav class="navbar">
+        <div class="navdiv">
+            <ul>
+                <li><a href="https://greg.heffner.live">Home</a></li>
+                <li><a href="https://greg.heffner.live/photos.html">Photos</a></li>
+                <li><a href="https://greg.heffner.live/blog.html">Blog</a></li>
+                <li><a
+                        href="https://www.paypal.com/donate/?business=UK9DCMKFRTWRN&no_recurring=0&item_name=Thanks+for+supporting+the+page&currency_code=USD">Support</a>
+                <li><a href="https://greg.heffner.live/privacy.html">Privacy Policy</a></li>
+                <li><a href="https://greg.heffner.live/cookie.html">Cookie Policy</a></li>
+                <li><a
+                        href="/cdn-cgi/l/email-protection#c1aca0a8afefb1ada0aff4f6f9f281a7a0b2b5aca0a8adefa2aeac">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="header">
+        <h2>Nerdsense</h2>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+
+                <h1>TryHackMe: Command Line Confessions</h1>
+                <h5>Greg Heffner August 28, 2024 </h5>
+
+                <img src="/image/blog/2024/Aug/tryhackme.png" alt="Tryhackme"
+                    style="display: block; margin-left: auto; margin-right: auto; width: 40%; height: auto;">
+                
+                <p>If youre anything like me you are always like to play with new toys and learn new ways to do things. <a href ="https://tryhackme.com">TryHackMe (THM)</a> came
+                    along for me at a perfect time where I needed a place to play and I was HUNGRY for more IT knowledge. THM is a training
+                    website that not only walks you through technical training sessions but allows you to put your skills to the test in real
+                    labs. The site is written for people who have no experience or people like me who are working in the industry and wanting to learn more. So dont worry if you and 
+                    your computer are not best friends yet.
+                    There are three main sections to the site in the learning section where I put most of my time and what I will
+                    be going over in this blog.</p>
+                
+                
+                
+                
+                <h3>Learn:</h3>
+                <img src="/image/blog/2024/Aug/thmlearn.png" alt="THM learning"
+                    style="display: block; margin-left: auto; margin-right: auto; width: 60%; height: auto;"><br>
+
+                THM calls this section Hands on Hacking. There are a few sections you can choose from here. This is where I go for
+                learning. I look for topics I am interested in and enroll. Best part is most of them are free!
+                <ul>
+                    <li>Learning Paths- Training that is grouped by Future Job Role. Examples like Jr Penetration Tester, Pre Security,
+                        Red Teaming, Complete Beginner, SOC level 1 and SOC level 2.</li>
+                
+                    <li>Cloud Training- This section is specifically setup for Attacking and Defending AWS. There are different
+                        training modules, simulated events, and labs with a path to a certification. </li>
+                
+                    <li>Modules- These are groups or training topics. Maybe you are looking for an Intro to Penetration Testing, How
+                        the web works, Threat Hunting. </li>
+                
+                    <li>Rooms- These are stories and challenges that also teach you. Think of this section as hands on training.</li>
+                    <li>Networks- This is a group of challenges that use virtual networks and tunneling attacks.</li>
+                    </p>
+                </ul>
+                
+                    <h3>Practice:</h3>
+                    <img src="/image/blog/2024/Aug/thmpractice.png" alt="THM practice"
+                        style="display: block; margin-left: auto; margin-right: auto; width: 60%; height: auto;"><br>
+                    <p>This are is for people who are interested in training and just want to go and test skills. There are two sections
+                        here. These are labs that are made like games. You enroll in the lab and are given questions to answer like what
+                        ports are open or what is the contents of a file on the server.
+                    <ul>
+                
+                        <li>General- Search this area for specific rooms you want to test. There is a room called <a
+                                href="https://tryhackme.com/r/room/agentsudoctf">Agent Sudo</a> and its description is "You found a
+                            secret server located under the deep sea. Your task is to hack inside the server and reveal the truth." You
+                            would log into the room and look into the instructions for next steps.</li>
+                
+                        <li>Series- Series are groups of rooms used to learn or exploit certain things. Example here would be the <a
+                                href="https://tryhackme.com/r/hacktivities/practice">Pentesting Tools</a> where you "Learn about and get
+                            experience with industry-standard offensive security tools."</li>
+                        </p>
+                    </ul>
+                        <h3>Search:</h3>
+                        <img src="/image/blog/2024/Aug/thmsearch.png" alt="THM search"
+                            style="display: block; margin-left: auto; margin-right: auto; width: 60%; height: auto;"><br>
+                        <p>This section is just that. THM has over 800 rooms as of writing this article and they go from literally
+                            complete beginner to insane Capture the Flag challenges like <a
+                                href="https://tryhackme.com/r/room/cct2019">CCT2019</a> where its an actual challenge from the US Navy
+                            Cyber Competition Team. </p>
+                
+                
+                
+                        <h3>How I use it:</h3>
+                        <p>I personally started in December one year. THM has a yearly thing called the Advent of Code where each day
+                            they release a new fun holiday themed exercise. I like these because they are written to allow everyone from
+                            complete beginners to advanced professionals to enjoy them. I think my favorites would be <a
+                                href="https://tryhackme.com/r/room/linuxstrengthtraining">Linux Strength training</a>, <a
+                                href="https://tryhackme.com/r/room/redteamengagements">Red Team Engagements</a>, or the <a
+                                href="https://tryhackme.com/r/room/introtok8s">Intro to Kubernetes</a> modules. I really like the way
+                            you are walked through the training and if you get stuck most of the time there is a write up you can
+                            reference from someone who has completed the room before. I just got into the <a
+                                href="https://tryhackme.com/r/ctf-builder">CTF builder</a> THM came out with. I would love to make a
+                            room in the <a href="https://tryhackme.com/develop-rooms">Develop Rooms</a> section but I dont think I will
+                            get to this any time soon. IDK, who knows. </p>
+
+                        <p>Check out <a href= "https://www.youtube.com/watch?v=vr2lfJT6M6A">shenetworks</a> Lazy Admin Walkthrough where she does a whole walkthrough for one of the rooms!!!
+                
+                        Once you create an account and finish some rooms you can share your personal badge and rank you
+                                get with THM:
+                                <script src="https://tryhackme.com/badge/1424708"></script>
+                        </p>
+                
+                        <h3><a href="https://www.bing.com">Bing AI</a> notes on TryHackMe:</h3>
+                        <p>Imagine TryHackMe as a fun online playground where you can learn how to be a superhero who protects computers
+                            from bad guys. 🦸‍♂️🦸‍♀️<br>
+                            On TryHackMe, you get to play games and solve puzzles that teach you how to find and fix problems in
+                            computers. It’s like a big adventure where you earn points and badges for completing challenges. You can
+                            even join teams with other kids and work together to solve tricky problems. <br>It’s all about learning how
+                            to keep computers safe while having a lot of fun! 🎮💻</p>
+
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h3>About Me</h3>
+                <p>I served in the U.S. Army, specializing in Network Switching Systems and was attached to a Patriot
+                    Missile
+                    System Battalion. After my deployment and Honorable discharge, I went to college in Jacksonville, FL
+                    for
+                    Computer Science. I have two beautiful and very intelligent daughters. I have more than 20 years
+                    professional IT
+                    experience. This page is made to learn and have
+                    fun. If
+                    its messed up, let me know. Im still learning :)</p>
+            </div>
+            <div class="scrollcard">
+                <h3>Recent Blogs</h3>
+                <div class="scroll-container">
+                    <nav>
+                        <li><a href="https://greg.heffner.live/image/pages/2024/Aug/k8s.html">Kubernetes: 86 the Prime
+                                Rib</a></li>
+                        <li><a href="https://greg.heffner.live/image/pages/2024/Aug/ansible.html">Ansible: Let me put
+                                you on patch game</a></li>
+                        <li><a href="https://greg.heffner.live/image/pages/2024/Aug/dockerupdate.html">Docker Updates: 4
+                                steps to secure your images</a></li>
+                        <li><a href="https://greg.heffner.live/image/pages/2024/Aug/travelrouter.html">Travel Router:
+                                How I stay secure on work trips</a></li>
+                        <li><a href="https://greg.heffner.live/image/pages/2024/Aug/secrets.html">Secrets: Password
+                                Managers and Hardware Keys</a></li>
+                        <li><a href="https://greg.heffner.live/image/pages/2024/Aug/twingate.html">Twingate: Your Key to
+                                Remote Networks</a></li>
+                        <li><a href="https://greg.heffner.live/image/pages/2024/Aug/dmrradios.html">DMR Radios: Its giving radio-nerd vibes</a></li>
+                    </nav>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Popular Projects</h3>
+                <li><a href="https://github.com/gregheffner/k8-nginx-webpage">Kubernetes cluster build</a></li>
+                <li><a href="https://github.com/gregheffner/python-init">CookieCutter Script - A python template</a>
+                </li>
+                <li><a href="https://github.com/gregheffner/playbooks/tree/main/tasks/">Ansible Kali Docker Build</a>
+                </li>
+                <li><a href="https://github.com/gregheffner/playbooks/blob/main/tasks/k8reboot.yml">Ansible Kubernetes
+                        node
+                        bounce w/NGINX HA</a></li>
+            </div>
+            <div class="card">
+                <h3>Book Board</h3>
+                <li><a href="https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592">The Phoenix
+                        Project:
+                        A Novel about IT, DevOps, and Helping Your Business Win</a></li>
+                <li><a href="https://www.amazon.com/Algorithms-to-Live-By-audiobook/dp/B01D24NAL6/">Algorithms to Live
+                        By: The
+                        Computer Science of Human Decisions</a></li>
+                <li><a href="https://www.ebay.com/itm/144165393633?">Little Lefty</a></li>
+                <li><a href="https://www.amazon.com/Anniversary-Paperback-Volumes-Limited-Original/dp/1637990049/">Harry
+                        Potter</a>
+                </li>
+            </div>
+            <div class="card">
+                <h3>Weather Loop </h3>
+                <a href="https://radar.weather.gov/ridge/standard/SOUTHEAST_loop.gif">
+                    <img border="3" src="https://radar.weather.gov/ridge/standard/SOUTHEAST_loop.gif"
+                        style="border: 1px solid FF0000; width: 300px;">
+            </div>
+        </div>
+    </div>
+    </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+        data-cf-settings="f2199bb571cfda9c96d3d8cf-|49" defer type="8d837a978209d4dd7e817739-text/javascript"></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"rayId":"8a0c47bffe7b53f3","r":1,"version":"2024.4.1","token":"58654ca0c624448c9c52f5291ddf5bec"}'
+        crossorigin="anonymous" type="8d837a978209d4dd7e817739-text/javascript"></script>
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+        data-cf-settings="8d837a978209d4dd7e817739-|49" defer></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"rayId":"8b881be33bb1672d","version":"2024.8.0","r":1,"token":"58654ca0c624448c9c52f5291ddf5bec","serverTiming":{"name":{"cfL4":true}}}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

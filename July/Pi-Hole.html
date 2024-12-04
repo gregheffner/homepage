@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+
+<head>
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="6a06e0ff-3af4-42b9-ab66-dd32f9e600e0"
+    data-blockingmode="auto" type="text/javascript"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SXLQTMF14Q"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-SXLQTMF14Q');
+    </script>
+  <!-- Google Tag Manager -->
+  <script type="915998925114be6a38098363-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-MQMRMNL5');</script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/image/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon-16x16.png">
+  <link rel="manifest" href="/image/site.webmanifest">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'trebuchet ms', sans-serif;;
+      padding: 20px;
+      background: #4E90BB;
+    }
+
+    .header {
+      padding: 10px;
+      font-size: 20px;
+      text-align: center;
+      background: white;
+    }
+
+    .leftcolumn {
+      float: left;
+      width: 75%;
+      height: 90vh;
+      overflow-y: visible;
+    }
+
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+    }
+
+    .img {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      margin-top: 20px;
+    }
+
+    @media screen and (max-width: 800px) {
+
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      background-color: black !important;
+      font-family: 'trebuchet ms', sans-serif;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    .navdiv {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar button {
+      background-color: transparent;
+      margin-left: 10px;
+      border-radius: 10px;
+      padding: 10px;
+      width: 90px;
+    }
+
+    .navbar button a {
+      color: transparent;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .navbar li {
+      list-style: none;
+      display: inline-block;
+    }
+
+    .navbar li a {
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      margin-right: 25px;
+      font-family: 'trebuchet ms', sans-serif;
+    }
+
+    .navbar button {
+      background-color: black;
+      margin-left: 10px;
+      border-radius: 10px;
+      padding: 10px;
+      width: 90px;
+    }
+
+    .navbar button a {
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      font-family: 'trebuchet ms', sans-serif;
+  </style>
+  <meta name="title" content="Nerdsense - Pi-Hole - July 2024">
+  <meta name="description" content="What is it and why you might want to use it">
+  <meta name="keywords" content="blog, tech, writeups">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta http-equiv='content-language' content='en-gb'>
+  <meta name="author" content="Greg Heffner">
+  
+  <title>Nerdsense - Pi-Hole - July 2024</title>
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3941951641805897"
+    crossorigin="anonymous"></script>
+  
+  <script async src="https://fundingchoicesmessages.google.com/i/pub-3941951641805897?ers=1"
+    nonce="drPCtL_hPnvLGFPUGtHsFQ" type="915998925114be6a38098363-text/javascript"></script>
+  <script nonce="drPCtL_hPnvLGFPUGtHsFQ" type="915998925114be6a38098363-text/javascript"> (function() {
+              function signalGooglefcPresent() {
+                  if (!window.frames['googlefcPresent']) {
+                      if (document.body) {
+                          const iframe = document.createElement('iframe');
+                          iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;';
+                          iframe.style.display = 'none';
+                          iframe.name = 'googlefcPresent';
+                          document.body.appendChild(iframe);
+                      } else {
+                          setTimeout(signalGooglefcPresent, 0);
+                      }
+                  }
+              }
+              signalGooglefcPresent();
+          })();  
+          </script>
+
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQMRMNL5" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <nav class="navbar">
+    <div class="navdiv">
+      <ul>
+        <li><a href="https://greg.heffner.live">Home</a></li>
+        <li><a href="https://greg.heffner.live/photos.html">Photos</a></li>
+        <li><a href="https://greg.heffner.live/blog.html">Blog</a></li>
+        <li><a
+            href="https://www.paypal.com/donate/?business=UK9DCMKFRTWRN&no_recurring=0&item_name=Thanks+for+supporting+the+page&currency_code=USD">Support</a>
+        <li><a href="https://greg.heffner.live/privacy.html">Privacy Policy</a></li>
+        <li><a href="https://greg.heffner.live/cookie.html">Cookie Policy</a></li>
+        <li><a href="/cdn-cgi/l/email-protection#c1aca0a8afefb1ada0aff4f6f9f281a7a0b2b5aca0a8adefa2aeac">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="header">
+    <h2>Nerdsense</h2>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+                                              <h1>Pi-Hole: What is it and why you might want to use it</h1>
+                                              <h5>Greg Heffner July 7, 2024</h5>
+                                              <div class="img" style="height:200px; display: flex; justify-content: center; align-items: center;">
+                                                <img src="/image/blog/2024/July/pihole.jpg" alt="Blog Image" style="width:20%; height: 200px; object-fit:cover;">
+                                              </div>
+                                              <h3> The What: </h3>
+                                              <p>Y'all... im so divided. Ads are the worst but I have them on my site. I guess they are the worst if you dont want
+                                                them and dont know how to block them?</p>
+                                              <p>I was going to write up a couple paragraphs explaining what DNS is but I found this <a
+                                                  href="https://proprivacy.com/guides/dns-services">Everything you need to know about DNS</a> when getting
+                                                references and decided it would work just fine. Lets skip to the part where we have a brief understanding how
+                                                www.google.com is translated to 142.251.107.113 (as of writing this)</p>
+                                              <p> DNS is something you cant go without if you want to do anything online. When you rent a "cable box" as some people
+                                                call it from your internet service provider (ISP) there will be settings that will point all your devices at home to
+                                                a specific DNS server owned by the ISP to access the internet.
+                                                The problem with this is that your ISP can see every website you visit when you request addresses from their server.
+                                                Its stored in their logs. They can sell this information to advertisers. This is where Pihole comes in. Pihole is a
+                                                DNS server that blocks ads and trackers. It is a great way to protect your privacy and security online AND it does
+                                                not sell your info because you control all your own info!</p>
+                                              <h3> The scary stuff: </h3>
+                                              <p> <a href="https://www.cloudflare.com/learning/dns/dns-security/">DNS Security</a> starts at home. DNS was not
+                                                originally designed with security in mind. As a result, it has vulnerabilities that attackers can exploit. These
+                                                attacks include DNS spoofing (where incorrect IP addresses are returned for domains), DNS tunneling (used to pass
+                                                malware or stolen information undetected), DNS hijacking (redirecting queries to different servers), and NXDOMAIN
+                                                attacks (flooding DNS servers to cause denial-of-service). Protecting DNS infrastructure helps prevent these risks
+                                                and ensures reliable internet performance.
+                                              <h3> Mitigation? </h3>
+                                              <p><a href="https://pi-hole.net">Pi-hole</a> is a versatile network-wide ad blocker that goes beyond just blocking
+                                                ads. It acts as a DNS server, allowing you to customize DNS resolutions for enhanced privacy and control over local
+                                                domain mappings. When you set up Pi-hole, it becomes the DNS server for your network, blocking advertisement-serving
+                                                domains and trackers across all connected devices, including smart TVs and smartphones</p>
+                                              <p>If you look at the install instructions it may look intimidating if youre new to github. The easiest way to install
+                                                and setup in my opinion is on a docker image. Follow "Method 3: Using Docker to deploy Pi-hole" to follow the same
+                                                process as I did. Once installed and your devices are pointing to the pihole IP address for its DNS server, you can
+                                                load the homepage of pi-hole to see analytics, throughput, security settings on the top and most recent queries and
+                                                most active devices on the bottom of the dashboard. All of these metrics are turned on by default and can be turned
+                                                off if you do not want any of this to be logged or saved.</p>
+                                              <a href="https://www.youtube.com/watch?v=dH3DdLy574M">Installation Video</a> by Network Chuck, a popular youtuber.
+                                              Skip to 4:07 to get right to it if youre on an OS that has docker installed already. If not, docker will run on almost
+                                              anything and all the other steps are the same once running follow this link for instructions. <a
+                                                href="https://docs.docker.com/get-docker/">Docker Install</a>
+                                              <br>
+                                              <br>
+                                              <figure>
+                                                <img src="/image/blog/2024/July/pihole.jpg" alt="Pi-hole StarTrek dashboard"
+                                                  style="display: block; margin-left: auto; margin-right: auto; width: 50%; height: auto;">
+                                                <figcaption style="text-align:center;">Pi-hole StarTrek dashboard that I use at home</figcaption>
+                                              </figure>
+                                              <h3>The Why: <a href="https://pi-hole.net/blog/2017/05/12/seven-things-you-may-not-know-about-pi-hole/">7 things you
+                                                  may not know about Pi-hole</a></h3>
+                                              <ol type="1">
+                                                <li>Ad Blocking: Pi-hole blocks ads for every device on your network without requiring client-side software. Its
+                                                  more effective than traditional browser-based ad blockers because it operates at the DNS level, preventing ads
+                                                  from being downloaded in the first place</li>
+                                                <li>Network Monitoring: By logging all DNS queries, Pi-hole lets you monitor network traffic. You might discover
+                                                  unexpected or concerning activity happening on your network</li>
+                                                <li>Improved Performance: Since Pi-hole blocks ads before theyre downloaded, your network performs better. This is
+                                                  especially useful for high-latency networks or limited data plans.</li>
+                                                <li>Reduced Bandwidth Usage: By preventing undesired digital assets (like ads) from being downloaded, Pi-hole helps
+                                                  conserve bandwidth.</li>
+                                                <li>Malware Protection: You can add block lists to prevent known malware domains from entering your network.</li>
+                                                <li>Non-Traditional Ad Blocking: Pi-hole can block ads in smart TVs and mobile apps, even if they dont run in a
+                                                  browser.</li>
+                                                <li>Thriving Community: Pi-hole has an active community across platforms like Discourse, Reddit, Twitter, and
+                                                  GitHub, where users can seek help, learn, and chat.</li>
+                                              </ol>
+                                              <h3> Personal aside: </h3>
+                                              <p> I use pi-hole today. I use it to block analytics for some of my internet of things "IoT" devices like Apple
+                                                HomePod Mini or my Smart thermostat. Some of these companies have beacons that monitor uptime and device usage. I
+                                                use the local dns features to make my own dns records. I also use cloudflare as my upstream server. <a
+                                                  href="https://www.cloudflare.com/zero-trust/products/gateway/"> Cloudflare Gateway</a>. With these settings I have
+                                                noticed a HUGE reduction in on screen ads when I am browsing the internet. I also feel more secure knowing Im
+                                                getting my DNS resolutions from Cloudflare rather than a local ISP which is trying to make a dollar off of me.
+                                                ¯\_(ツ)_/¯</p>
+                                              <h3> Example of pi-hole blocks: </h3>
+                                              <figure style="text-align:center; max-width:50%; margin-left:auto; margin-right:auto;">
+                                                <img src="/image/blog/2024/July/blocks.jpg" alt="Example of blocks" style="width: 100%; height: auto;">
+                                                <figcaption>Screenshot of Pi-hole block screen. These are manual entries I have asked the pi-hole to block. Also
+                                                  notice the FQDN in the URL bar not an IP address showing the local DNS entries work. </figcaption>
+                                              </figure>
+                                              <h3>In conclusion a funny explanation as told by Bing AI: </h3>
+                                              <p> Once upon a time, in the magical land of Internet, there lived a little guardian named Pi-hole.
+                                                Pi-hole had a special job: to keep away pesky ads and sneaky trackers from bothering all the devices in its kingdom.
+                                                Every day, as the sun rose, Pi-hole would stand tall at the castle gate, waving its wand (well, it was more like a
+                                                router) and saying, “No ads allowed here!” And poof! The ads vanished!
+                                                The people of the kingdom loved Pi-hole because it made their online adventures safer and more private. They could
+                                                surf the web without being followed by curious advertisers.
+                                                And so, dear children, thats how Pi-hole became a hero in the digital realm, protecting everyone from unwanted ads
+                                                and keeping their secrets safe. The end!</p>
+      </div>
+    </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h3>About Me</h3>
+            <p>I served in the U.S. Army, specializing in Network Switching Systems and was attached to a Patriot
+              Missile
+              System Battalion. After my deployment and Honorable discharge, I went to college in Jacksonville, FL
+              for
+              Computer Science. I have two beautiful and very intelligent daughters. I have more than 20 years professional IT
+              experience. This page is made to learn and have
+              fun. If
+              its messed up, let me know. Im still learning :)</p>
+          </div>
+          <div class="card">
+            <h3>Recent Blogs</h3>
+            <nav>
+              <li><a href="https://greg.heffner.live/image/pages/initial.html">Beginners Journey: Greg Starts His Blog</a></li>
+              <li><a href="https://greg.heffner.live/image/pages/2024/July/Pi-Hole.html">Pi-hole: What is it and why you might want
+                  to use it</a></li>
+              <li><a href="https://greg.heffner.live/image/pages/2024/July/GitHub.html">Github: Whats the fuss about?</a> </li>
+            </nav>
+          </div>
+          <div class="card">
+            <h3>Popular Projects</h3>
+            <li><a href="https://github.com/gregheffner/k8-nginx-webpage">Kubernetes cluster build</a></li>
+            <li><a href="https://github.com/gregheffner/python-init">CookieCutter Script - A python template</a>
+            </li>
+            <li><a href="https://github.com/gregheffner/playbooks/tree/main/tasks/">Kali Docker Build</a></li>
+            <li><a href="https://github.com/gregheffner/playbooks/blob/main/tasks/k8reboot.yml">Kubernetes node
+                bounce with
+                NGINX High Availability</a></li>
+          </div>
+          <div class="card">
+            <h3>Book Board</h3>
+            <li><a href="https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592">The Phoenix
+                Project:
+                A Novel about IT, DevOps, and Helping Your Business Win</a></li>
+            <li><a href="https://www.amazon.com/Algorithms-to-Live-By-audiobook/dp/B01D24NAL6/">Algorithms to Live
+                By: The
+                Computer Science of Human Decisions</a></li>
+            <li><a href="https://www.ebay.com/itm/144165393633?">Little Lefty</a></li>
+            <li><a href="https://www.amazon.com/Anniversary-Paperback-Volumes-Limited-Original/dp/1637990049/">Harry Potter</a>
+            </li>
+          </div>
+          <div class="card">
+            <h3>Weather Loop </h3>
+            <a href="https://radar.weather.gov/ridge/standard/SOUTHEAST_loop.gif" alt="Weather Loop">
+              <img border="3" src="https://radar.weather.gov/ridge/standard/SOUTHEAST_loop.gif"
+                style="border: 1px solid FF0000; width: 300px;">
+      </div>
+    </div>
+  </div>
+  </div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+    data-cf-settings="f2199bb571cfda9c96d3d8cf-|49" defer></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+    integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+    data-cf-beacon='{"rayId":"8a0c47bffe7b53f3","r":1,"version":"2024.4.1","token":"58654ca0c624448c9c52f5291ddf5bec"}'
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
